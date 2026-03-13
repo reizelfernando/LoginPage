@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>upstaff Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =============================================
+       INTRO OVERLAY
+       Full-screen overlay shown on first load.
+       The scrolling photo slideshow plays behind
+       the centered logo during the intro.
+  ============================================= -->
+  <div id="intro-overlay">
+
+    <!-- PHOTO SLIDESHOW BACKGROUND -->
+    <div class="hero-slideshow">
+      <div class="hero-slideshow-track">
+        <!-- Original 13 images -->
+        <div class="slide" style="background-image: url('image/1.jpg');"></div>
+        <div class="slide" style="background-image: url('image/2.jpg');"></div>
+        <div class="slide" style="background-image: url('image/3.jpg');"></div>
+        <div class="slide" style="background-image: url('image/4.jpg');"></div>
+        <div class="slide" style="background-image: url('image/5.jpg');"></div>
+        <div class="slide" style="background-image: url('image/6.JPG');"></div>
+        <div class="slide" style="background-image: url('image/7.jpg');"></div>
+        <div class="slide" style="background-image: url('image/8.jpg');"></div>
+        <div class="slide" style="background-image: url('image/9.jpg');"></div>
+        <div class="slide" style="background-image: url('image/10.jpg');"></div>
+        <div class="slide" style="background-image: url('image/11.jpg');"></div>
+        <div class="slide" style="background-image: url('image/12.jpg');"></div>
+        <div class="slide" style="background-image: url('image/13.jpg');"></div>
+        <!-- Duplicated for seamless infinite loop -->
+        <div class="slide" style="background-image: url('image/1.jpg');"></div>
+        <div class="slide" style="background-image: url('image/2.jpg');"></div>
+        <div class="slide" style="background-image: url('image/3.jpg');"></div>
+        <div class="slide" style="background-image: url('image/4.jpg');"></div>
+        <div class="slide" style="background-image: url('image/5.jpg');"></div>
+        <div class="slide" style="background-image: url('image/6.JPG');"></div>
+        <div class="slide" style="background-image: url('image/7.jpg');"></div>
+        <div class="slide" style="background-image: url('image/8.jpg');"></div>
+        <div class="slide" style="background-image: url('image/9.jpg');"></div>
+        <div class="slide" style="background-image: url('image/10.jpg');"></div>
+        <div class="slide" style="background-image: url('image/11.jpg');"></div>
+        <div class="slide" style="background-image: url('image/12.jpg');"></div>
+        <div class="slide" style="background-image: url('image/13.jpg');"></div>
+      </div>
+    </div>
+    <!-- Dark tint so the logo is clearly visible -->
+    <div class="slideshow-tint"></div>
+
+    <!-- The logo — centered, then flies to the nav on animation start -->
+    <div id="intro-logo-wrap">
+      <div id="intro-logo">
+        <img src="image/logo.png" alt="upstaff Logo" />
+      </div>
+    </div>
+
+  </div>
+  <!-- END intro-overlay -->
+
+
+  <!-- =============================================
+       MAIN PAGE
+       Hidden at first. Fades in after the
+       intro animation completes.
+  ============================================= -->
+  <div id="main-page">
+
+    <!-- ---- NAVIGATION / HEADER ---- -->
+    <header id="site-header">
+
+      <!-- Logo area: small mark + brand name -->
+      <div id="nav-logo-area">
+        <div id="nav-logo-mark">
+          <img src="image/logo.png" alt="upstaff Logo" />
+        </div>
+        <span id="nav-brand-name">upstaff</span>
+      </div>
+
+      <!-- Navigation links -->
+      <nav id="nav-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- Header buttons: CTA + Theme toggle -->
+      <div class="header-buttons">
+        <!-- Login/Register on the LEFT -->
+        <a href="#" class="cta-btn">LogIn/Register</a>
+        <!-- Theme toggle on the RIGHT -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div><!-- END header-buttons -->
+
+    </header>
+    <!-- END header -->
+
+
+    <!-- ---- HERO SECTION ----
+         The same slideshow continues here after
+         the intro overlay fades away, creating
+         a seamless visual transition.
+    ---- -->
+    <section id="hero">
+
+      <!-- Slideshow background (mirrors the intro overlay) -->
+      <div class="hero-slideshow">
+        <div class="hero-slideshow-track">
+          <div class="slide" style="background-image: url('image/1.jpg');"></div>
+          <div class="slide" style="background-image: url('image/2.jpg');"></div>
+          <div class="slide" style="background-image: url('image/3.jpg');"></div>
+          <div class="slide" style="background-image: url('image/4.jpg');"></div>
+          <div class="slide" style="background-image: url('image/5.jpg');"></div>
+          <div class="slide" style="background-image: url('image/6.JPG');"></div>
+          <div class="slide" style="background-image: url('image/7.jpg');"></div>
+          <div class="slide" style="background-image: url('image/8.jpg');"></div>
+          <div class="slide" style="background-image: url('image/9.jpg');"></div>
+          <div class="slide" style="background-image: url('image/10.jpg');"></div>
+          <div class="slide" style="background-image: url('image/11.jpg');"></div>
+          <div class="slide" style="background-image: url('image/12.jpg');"></div>
+          <div class="slide" style="background-image: url('image/13.jpg');"></div>
+          <div class="slide" style="background-image: url('image/1.jpg');"></div>
+          <div class="slide" style="background-image: url('image/2.jpg');"></div>
+          <div class="slide" style="background-image: url('image/3.jpg');"></div>
+          <div class="slide" style="background-image: url('image/4.jpg');"></div>
+          <div class="slide" style="background-image: url('image/5.jpg');"></div>
+          <div class="slide" style="background-image: url('image/6.JPG');"></div>
+          <div class="slide" style="background-image: url('image/7.jpg');"></div>
+          <div class="slide" style="background-image: url('image/8.jpg');"></div>
+          <div class="slide" style="background-image: url('image/9.jpg');"></div>
+          <div class="slide" style="background-image: url('image/10.jpg');"></div>
+          <div class="slide" style="background-image: url('image/11.jpg');"></div>
+          <div class="slide" style="background-image: url('image/12.jpg');"></div>
+          <div class="slide" style="background-image: url('image/13.jpg');"></div>
+        </div>
+      </div>
+      <!-- Tint over photos for text readability -->
+      <div class="slideshow-tint"></div>
+
+      <!-- Hero text — sits above the slideshow via z-index -->
+      <h1 class="hero-headline">
+        Welcome to<br/>
+        <em>upstaff</em><br/>
+        Academy
+      </h1>
+      <p class="hero-sub">
+        Learn faster. Build skills. Connect with opportunities.<br/>
+      </p>
+      <div class="hero-cta-row">
+        <a href="#" class="btn-primary">Get Started</a>
+        <a href="#" class="btn-ghost">Learn More ↗</a>
+      </div>
+
+      <!-- Subtle decorative accent lines -->
+      <div class="hero-deco-line line-1"></div>
+      <div class="hero-deco-line line-2"></div>
+
+    </section>
+    <!-- END hero -->
+
+
+    <!-- ---- MARQUEE STRIP ---- -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>Training Course</span><span class="dot">·</span>
+        <span>General Skills</span><span class="dot">·</span>
+        <span>Succeed in your role</span><span class="dot">·</span>
+        <span>Focus on the key skills</span><span class="dot">·</span>
+        <span>Get hired faster</span><span class="dot">·</span>
+        <span>Training Course</span><span class="dot">·</span>
+        <span>General Skills</span><span class="dot">·</span>   
+        <span>Succeed in your role</span><span class="dot">·</span>
+        <span>Focus on the key skills</span><span class="dot">·</       
+      </div>
+    </div>
+
+
+    <!-- ---- THE UPSTAFF PROMISE ---- -->
+    <section id="features" class="promise-section">
+
+      <h2 class="promise-title">The Upstaff Promise</h2>
+
+      <div class="promise-grid">
+
+        <!-- Promise 1 -->
+        <div class="promise-card">
+          <div class="promise-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="12" width="30" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="14" y1="22" x2="32" y2="22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="14" y1="30" x2="32" y2="30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="14" y1="38" x2="24" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="46" cy="42" r="10" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="2"/>
+              <path d="M41 42l3 3 6-6" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>A bespoke selection process</h3>
+          <p>Every candidate is hand-picked to match your exact business needs and culture.</p>
+        </div>
+
+        <!-- Promise 2 -->
+        <div class="promise-card">
+          <div class="promise-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/>
+              <polyline points="32,18 32,34 42,34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="44" cy="46" r="8" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="2"/>
+              <text x="40" y="50" font-size="10" fill="var(--accent)" font-weight="bold">$</text>
+            </svg>
+          </div>
+          <h3>From just $7 an hour</h3>
+          <p>Save significantly on salary costs without sacrificing quality or commitment.</p>
+        </div>
+
+        <!-- Promise 3 -->
+        <div class="promise-card">
+          <div class="promise-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="14" width="44" height="38" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="10" y1="24" x2="54" y2="24" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="22" y1="8" x2="22" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="42" y1="8" x2="42" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="18" y="30" width="8" height="8" rx="1" fill="var(--accent)" opacity="0.7"/>
+              <rect x="30" y="30" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="42" y="30" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="42" cy="46" r="8" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="2"/>
+              <text x="38.5" y="50" font-size="11" fill="var(--accent)" font-weight="bold">1</text>
+            </svg>
+          </div>
+          <h3>Ready to go from day one</h3>
+          <p>Your staff member hits the ground running — no lengthy onboarding required.</p>
+        </div>
+
+        <!-- Promise 4 -->
+        <div class="promise-card">
+          <div class="promise-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="10" width="40" height="30" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <line x1="20" y1="20" x2="44" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="20" y1="27" x2="36" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="52" r="8" fill="var(--accent)" opacity="0.15" stroke="var(--accent)" stroke-width="2"/>
+              <path d="M28 52l3 3 6-6" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="32" y1="40" x2="32" y2="44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>University-qualified & English-speaking</h3>
+          <p>All staff are degree-educated and fluent in English for seamless communication.</p>
+        </div>
+
+        <!-- Promise 5 -->
+        <div class="promise-card">
+          <div class="promise-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 10 C32 10 14 18 14 32 C14 46 32 54 32 54 C32 54 50 46 50 32 C50 18 32 10 32 10Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+              <path d="M26 32l4 4 8-8" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Staff fully committed to you</h3>
+          <p>Dedicated team members who work exclusively for your business, not shared.</p>
+        </div>
+
+        <!-- Promise 6 -->
+        <div class="promise-card">
+          <div class="promise-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Puzzle pieces -->
+              <path d="M14 14 h14 v5 a4 4 0 0 1 0 8 v5 h-14 z" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+              <path d="M28 14 h14 v14 h5 a4 4 0 0 1 0 8 h-5 v14 h-14 v-5 a4 4 0 0 1 -8 0 v5 h-14 v-14 h5 a4 4 0 0 1 0 -8 h-5 v-14 h14 v5 a4 4 0 0 1 8 0 z" stroke="var(--accent)" stroke-width="2" fill="var(--accent)" opacity="0.15" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Transparent & accountable partnership</h3>
+          <p>Clear reporting, honest communication and full visibility into your team's work.</p>
+        </div>
+
+      </div>
+    </section>
+
+  <!-- END main-page -->
+
+
+  <!-- ---- FOOTER ---- -->
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <!-- Column 1: Contact + CTA buttons + Logo -->
+      <div class="footer-col footer-col-brand">
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">Contact</h4>
+          <p>245 St Kilda Road<br/>St Kilda 3182</p>
+          <p>Mon–Fri 9am–5pm<br/>+61 478 110 011</p>
+        </div>
+
+        <!-- Big logo at the bottom of column 1 -->
+        <div class="footer-logo">
+          <img src="image/logo.png" alt="upstaff logo" class="footer-logo-img" />
+          <span class="footer-logo-text">upstaff</span>
+        </div>
+
+      </div>
+
+      <!-- Column 2: Menu links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Menu</h4>
+        <ul class="footer-links">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Industries -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Industries</h4>
+        <ul class="footer-links">
+          <li><a href="#">Trade</a></li>
+          <li><a href="#">Retail</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">eCommerce</a></li>
+          <li><a href="#">Property management</a></li>
+          <li><a href="#">Hospitality</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Decorative logo watermark + social icons -->
+      <div class="footer-col footer-col-social">
+        <!-- Large faint watermark logo -->
+        <div class="footer-watermark">
+          <img src="image/logo.png" alt="" aria-hidden="true" />
+        </div>
+        <!-- Social icons bottom-right -->
+        <div class="footer-social">
+          <!-- Facebook -->
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© 2026 upstaff Interns. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+
+  <!-- Animation + theme toggle script -->
+  <script src="main.js"></script>
+
+</body>
+</html>
